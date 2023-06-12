@@ -62,7 +62,7 @@ config/prod/params/kafka.php
 > 脚本部署在```101.200.197.153(公)/172.18.173.254(私)```服务器上
 
 ```conf
-    ;TOC消费推送消息脚本 高级别消息  - 卫振家
+    ;TOC消费推送消息脚本 高级别消息 
     [program:push_service_app2c_high_priority]
     command=/alidata/server/php/bin/php /alidata/www/push_service/yii push/send Julive_Queue_Push_Service_APP2C group_JULIVE_QUEUE_PUSH_SERVICE_high_priority
     log_stdout=true
@@ -72,7 +72,7 @@ config/prod/params/kafka.php
     stdout_logfile_backups=10
     priority=1
     
-    ;TOC消费推送消息脚本 中级别消息  - 卫振家
+    ;TOC消费推送消息脚本 中级别消息  
     [program:push_service_app2c_middle_priority]
     command=/alidata/server/php/bin/php /alidata/www/push_service/yii push/send Julive_Queue_Push_Service_APP2C group_JULIVE_QUEUE_PUSH_SERVICE_middle_priority
     log_stdout=true
@@ -82,7 +82,7 @@ config/prod/params/kafka.php
     stdout_logfile_backups=10
     priority=1
     
-    ;TOC消费推送消息脚本 低级别消息  - 卫振家
+    ;TOC消费推送消息脚本 低级别消息  
     [program:push_service_app2c_low_priority]
     command=/alidata/server/php/bin/php /alidata/www/push_service/yii push/send Julive_Queue_Push_Service_APP2C group_JULIVE_QUEUE_PUSH_SERVICE_low_priority
     log_stdout=true
@@ -92,7 +92,7 @@ config/prod/params/kafka.php
     stdout_logfile_backups=10
     priority=1
     
-    ;TOB消费推送消息脚本 高级别消息  - 卫振家
+    ;TOB消费推送消息脚本 高级别消息  
     [program:push_service_app2b_high_priority]
     command=/alidata/server/php/bin/php /alidata/www/push_service/yii push/send Julive_Queue_Push_Service_APP2B group_JULIVE_QUEUE_PUSH_SERVICE_high_priority
     log_stdout=true
@@ -102,7 +102,7 @@ config/prod/params/kafka.php
     stdout_logfile_backups=10
     priority=1
     
-    ;TOB消费推送消息脚本 中级别消息  - 卫振家
+    ;TOB消费推送消息脚本 中级别消息  
     [program:push_service_app2b_middle_priority]
     command=/alidata/server/php/bin/php /alidata/www/push_service/yii push/send Julive_Queue_Push_Service_APP2B group_JULIVE_QUEUE_PUSH_SERVICE_middle_priority
     log_stdout=true
@@ -112,7 +112,7 @@ config/prod/params/kafka.php
     stdout_logfile_backups=10
     priority=1
     
-    ;TOB消费推送消息脚本 低级别消息  - 卫振家
+    ;TOB消费推送消息脚本 低级别消息 
     [program:push_service_app2b_low_priority]
     command=/alidata/server/php/bin/php /alidata/www/push_service/yii push/send Julive_Queue_Push_Service_APP2B group_JULIVE_QUEUE_PUSH_SERVICE_low_priority
     log_stdout=true
@@ -122,7 +122,7 @@ config/prod/params/kafka.php
     stdout_logfile_backups=10
     priority=1
 
-    ;TOB消费推送消息脚本 低级别消息  - 孙文科
+    ;TOB消费推送消息脚本 低级别消息  
     [program:push_service_app2b_clow_priority]
     command=/alidata/server/php/bin/php /alidata/www/push_service/yii push/send Julive_Queue_Push_Service_APP2B group_JULIVE_QUEUE_PUSH_SERVICE_clow_priority
     log_stdout=true
@@ -133,7 +133,7 @@ config/prod/params/kafka.php
     priority=1
     
     
-    ;定时推送消息脚本 - 卫振家
+    ;定时推送消息脚本 
     [program:push_service_tick_send]
     command=/alidata/server/php/bin/php /alidata/www/push_service/yii push/tick-send
     log_stdout=true
