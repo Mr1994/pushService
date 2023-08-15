@@ -11,11 +11,11 @@
 
 - Julive_Queue_Push_Service_APP2C
 
-  > 这个Topic是针对居理C端APP的，量较大，因此单独拿出来，配置了6个分区
+配置了6个分区
 
 - Julive_Queue_Push_Service_APP2B
 
-  > 这个Topic是针对居理B端APP的(咨询师APP、同舟APP、小猫头鹰宝典、ESA)，配置了6个分区
+ 配置了6个分区
 
 ##### Group
 
